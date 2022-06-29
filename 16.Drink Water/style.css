@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+:root {
+  --fill-color: #6ab3f8;
+  --border-color: #144fc6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3494e4;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  margin: 10px;
+}
+
+#big-glass {
+  background-color: white;
+  color: var(--border-color);
+  border: solid 4px var(--border-color);
+  border-radius: 0 0 30px 30px;
+  margin: 30px 0 40px;
+  height: 330px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.remain {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s linear;
+  text-align: center;
+}
+
+.remain span {
+  font-weight: bold;
+}
+
+.drank {
+  background-color: var(--fill-color);
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s linear;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cups {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cup {
+  width: 50px;
+  height: 100px;
+  border: solid 4px var(--border-color);
+  margin: 10px 5px;
+  color: var(--border-color);
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cup.active {
+  background-color: var(--fill-color);
+  color: white;
+}

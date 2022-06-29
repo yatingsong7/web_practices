@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  font-family: "Muli", sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  border: solid gray 1px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.question {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+button {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.answer {
+  display: none;
+  font-size: 15px;
+}
+
+.faq.active {
+  background-color: white;
+  box-shadow: 1px 2px 5px gray;
+}
+
+.faq.active .answer {
+  display: block;
+}
+
+.faq.active .fa-angle-down {
+  display: none;
+}
+
+.faq .fa-times {
+  display: none;
+}
+
+.faq.active .fa-times {
+  display: block;
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 30px;
+  left: 50px;
+  z-index: 0;
+}
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: 0;
+  transform: rotateY(180deg);
+}
