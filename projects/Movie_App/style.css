@@ -1,16 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+:root {
+  --primary: #495c83;
+  --secondary: #5f6f94;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  background-color: var(--primary);
+  font-family: "Poppins", sans-serif;
   margin: 0;
+}
+
+.search-bar {
+  background-color: var(--secondary);
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  font-family: inherit;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  background-color: var(--primary);
+}
+
+#movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: var(--secondary);
+  width: 280px;
+  height: 430px;
+  margin: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+  height: 340px;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.movie-info h3 {
+  margin-top: 0px;
+}
+
+.movie-info span {
+  background-color: var(--primary);
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: white;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  max-height: 100%;
+  overflow-y: auto;
+  transform: translateY(105%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+#clear {
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
