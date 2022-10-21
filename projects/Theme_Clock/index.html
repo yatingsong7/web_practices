@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>Theme Clock</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
-
+    <button id="modebtn">Dark Mode</button>
+    <div class="clock">
+      <div class="needle" id="hour"></div>
+      <div class="needle" id="minute"></div>
+      <div class="needle" id="second"></div>
+      <div class="center"></div>
+    </div>
+    <div id="time">time</div>
+    <div id="month-date">
+      <div id="month"></div>
+      <div id="date"></div>
+    </div>
     <script src="script.js"></script>
-    <!-- <script
-      src="https://kit.fontawesome.com/5130b11f64.js"
-      crossorigin="anonymous"
-    ></script> -->
   </body>
 </html>

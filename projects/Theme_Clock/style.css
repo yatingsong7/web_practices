@@ -1,11 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Heebo:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #000;
+  --secondary: #fff;
+}
+
+html.dark {
+  --primary: #fff;
+  --secondary: #333;
+}
+
+html.dark {
+  background-color: #000;
+  color: var(--primary);
+}
+
+html {
+  transition: all 0.4s ease-in;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Heebo", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,4 +32,88 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.clock {
+  height: 300px;
+  width: 300px;
+  margin-top: 20px;
+  position: relative;
+  background-color: cornsilk;
+  border-radius: 50%;
+}
+
+#time {
+  font-size: 60px;
+  margin: 5px;
+}
+
+#month {
+  font-size: 20px;
+  color: grey;
+}
+
+#month-date {
+  display: flex;
+  flex-direction: row;
+}
+
+#date {
+  margin-left: 5px;
+  padding: 4px 6px;
+  font-size: 15px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 20px;
+}
+
+#modebtn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.needle {
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90px;
+  width: 3px;
+  transform-origin: bottom center;
+}
+
+.needle#minute {
+  height: 110px;
+}
+
+.needle#second {
+  height: 130px;
+  background-color: #e74c3c;
+}
+
+.center {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center::after {
+  content: "";
+  background-color: var(--primary);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
