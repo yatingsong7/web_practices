@@ -28,11 +28,35 @@ h1 {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: #285430;
+  color: #fef5ed;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 80px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+  background-color: #e5d9b6;
+  color: #285430;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 10px;
+  margin: 20px 10px;
 }
 
 .project {
