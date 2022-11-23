@@ -18,35 +18,36 @@ h1 {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 40vh;
   background-color: #5f7161;
   color: #fef5ed;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 10px;
-  row-gap: 10px;
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 10px;
 }
 
 .project {
-  height: 220px;
-  width: 250px;
+  height: 260px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 img {
-  height: 170px;
-  width: 230px;
+  height: 200px;
+  width: 280px;
   border-radius: 10px;
   border: 3px solid #42855b;
 }

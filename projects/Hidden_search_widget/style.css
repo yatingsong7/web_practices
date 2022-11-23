@@ -34,6 +34,7 @@ button {
   cursor: pointer;
   border: 0;
 }
+
 button.active {
-  transform: translateX(-250%);
+  transform: translateX(-220%);
 }
