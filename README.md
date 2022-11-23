@@ -9,14 +9,13 @@ This is the main repository for all my personal practices that I learnt from onl
 #### Widgets
 
 | Project               | Demo Link                                                                     | Repository Link                                                                               |
-| --------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------ | --- |
+| --------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Animated Navigation   | [Demo](https://projects-practice.netlify.app/projects/animated_navigation/)   | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Animated_Navigation)   |
 | Background Slider     | [Demo](https://projects-practice.netlify.app/projects/background_slider/)     | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Background_Slider)     |
 | Blurry Loading        | [Demo](https://projects-practice.netlify.app/projects/blurry_loading/)        | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Blurry_loading)        |
 | Button Ripple Effect  | [Demo](https://projects-practice.netlify.app/projects/button_ripple_effect/)  | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Button_Ripple_Effect)  |
 | CSS Loader            | [Demo](https://projects-practice.netlify.app/projects/css_loader/)            | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/CSS_Loader)            |
 | Dad Jokes             | [Demo](https://projects-practice.netlify.app/projects/dad_jokes/)             | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Dad_Jokes)             |
-| <!--                  | Drag and Drop                                                                 | [Demo]                                                                                        | [Repo] | --> |
 | Drink Water           | [Demo](https://projects-practice.netlify.app/projects/drink_water/)           | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Drink_Water)           |
 | Event Keycodes        | [Demo](https://projects-practice.netlify.app/projects/event_keycodes/)        | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Event_KeyCodes)        |
 | Expand Card           | [Demo](https://projects-practice.netlify.app/projects/expand_card/)           | [Repo](https://github.com/yatingsong7/web_practices/tree/main/projects/Expand_card)           |
